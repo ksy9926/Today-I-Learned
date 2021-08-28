@@ -24,7 +24,7 @@
 
 ### Today's Memo
 
-- [2021-08-28의 TIL](Today's-Memo/2021-08-28.md)
+- [2021-08-28의 TIL](Today's%20Memo/2021-08-28.md)
 
 ### HTML
 
