@@ -25,11 +25,16 @@
 ### Today's Memo
 
 - [2021-08-28의 TIL](Today's%20Memo/2021-08-28.md)
+- [2021-08-29의 TIL](Today's%20Memo/2021-08-29.md)
 
 ### HTML
 
 - [Introduction](HTML/Introduction.md)
 - [HTML이란?](HTML/what-is-html.md)
+- [텍스트 요소](HTML/text-element.md)
+- [구조를 나타내는 요소](HTML/structure-element.md)
+- [목록과 표](HTML/list-and-table.md)
+- [SEO](HTML/SEO.md)
 
 ### CSS
 
