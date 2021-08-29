@@ -1,4 +1,4 @@
-# HTML Introduction
+# HTML이란 무엇인가?
 
 > [1. HTML은 어떻게 생겼을까?](#1-html은-어떻게-생겼을까)
 >
