@@ -26,6 +26,7 @@
 
 - [2021-08-28의 TIL](Today's%20Memo/2021-08-28.md)
 - [2021-08-29의 TIL](Today's%20Memo/2021-08-29.md)
+- [2021-08-30의 TIL](Today's%20Memo/2021-08-30.md)
 
 ### HTML
 
@@ -34,6 +35,8 @@
 - [텍스트 요소](HTML/text-element.md)
 - [구조를 나타내는 요소](HTML/structure-element.md)
 - [목록과 표](HTML/list-and-table.md)
+- [임베디드 요소](HTML/imbedded-element.md)
+- [폼 요소](HTML/form-element.md)
 - [SEO](HTML/SEO.md)
 
 ### CSS
