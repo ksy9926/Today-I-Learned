@@ -27,6 +27,11 @@
 - [2021-08-28의 TIL](Today's%20Memo/2021-08-28.md)
 - [2021-08-29의 TIL](Today's%20Memo/2021-08-29.md)
 - [2021-08-30의 TIL](Today's%20Memo/2021-08-30.md)
+- [2021-08-31의 TIL](Today's%20Memo/2021-08-31.md)
+
+### 프론트엔드 전반
+
+- [브라우저 동작](FrontEnd/browser-rendering.md)
 
 ### HTML
 
@@ -37,6 +42,7 @@
 - [목록과 표](HTML/list-and-table.md)
 - [임베디드 요소](HTML/imbedded-element.md)
 - [폼 요소](HTML/form-element.md)
+- [메타데이터 요소](HTML/meta-element.md)
 - [SEO](HTML/SEO.md)
 
 ### CSS
