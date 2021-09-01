@@ -32,6 +32,7 @@
 ### 프론트엔드 전반
 
 - [브라우저 동작](FrontEnd/browser-rendering.md)
+- [DOM](FrontEnd/DOM.md)
 
 ### HTML
 
@@ -43,6 +44,7 @@
 - [임베디드 요소](HTML/imbedded-element.md)
 - [폼 요소](HTML/form-element.md)
 - [메타데이터 요소](HTML/meta-element.md)
+- [전역 속성](HTML/global-attributes.md)
 - [SEO](HTML/SEO.md)
 
 ### CSS
