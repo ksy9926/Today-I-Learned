@@ -33,6 +33,7 @@
 - [2021-09-03의 TIL](Today's%20Memo/2021-09-03.md)
 - [2021-09-04의 TIL](Today's%20Memo/2021-09-04.md)
 - [2021-09-05의 TIL](Today's%20Memo/2021-09-05.md)
+- [2021-09-06의 TIL](Today's%20Memo/2021-09-06.md)
 
 ### 프론트엔드 전반
 
@@ -55,7 +56,8 @@
 ### CSS
 
 - [Introduction](CSS/introduction.md)
-- [CSS 선택자](CSS.selector.md)
+- [CSS 선택자](CSS/selector.md)
+- [CSS 폰트 관련 속성](CSS/font.md)
 
 ### JavaScript
 
