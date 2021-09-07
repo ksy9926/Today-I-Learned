@@ -4,29 +4,9 @@
 >
 > [2. letter-spacing, word-spacing](#2-letter-spacing-word-spacing)
 >
-> [3. 가상클래스 선택자(:nth-child())](#3-가상클래스-선택자nth-child)
+> [3. text-align, text-indent, text-decoration, text-transform](#3-text-align-text-indent-text-decoration-text-transform)
 >
-> [4. 가상클래스 선택자(:nth-of-type())](#4-가상클래스-선택자nth-of-type)
->
-> [5. 가상클래스 선택자(:not())](#5-가상클래스-선택자not)
->
-> [6. 가상클래스 선택자(:link, :visited)](#6-가상클래스-선택자link-visited)
->
-> [7. 가상클래스 선택자(:hover, :active, :focus)](#7-가상클래스-선택자hover-active-focus)
->
-> [8. 가상클래스 선택자(:enabled, :disabled, :checked)](#8-가상클래스-선택자enabled-disabled-checked)
->
-> [9. 가상요소 선택자(::before, ::after)](#9-가상요소-선택자before-after)
->
-> [10. 가상요소 선택자(::first-letter, ::first-line, ::selection)](#10-가상요소-선택자first-letter-first-line-selection)
->
-> [11. 선택자 결합](#11-선택자-결합)
->
-> [12. 범용 선택자](#12-범용-선택자)
->
-> [13. 상속 제어하기](#13-상속-제어하기)
->
-> [14. 우선순위](#14-우선순위)
+> [4. word-break](#4-word-break)
 
 <br><hr>
 
@@ -80,18 +60,20 @@
 
 <br><hr>
 
-## 3. text-align, text-indent, text-decoration
+## 3. text-align, text-indent, text-decoration, text-transform
 
 - `text-align` : 텍스트의 수평 정렬을 설정. 블록 요소에만 적용된다. start, end, left, right, center, justify, justify-all 등의 값으로 설정 가능하다.
 - `text-indent` : 텍스트의 들여쓰기 간격을 설정. 블록 요소에만 적용된다.
 - `text-decoration` : 텍스트의 라인을 위치, 컬러, 스타일, 굵기 등으로 한번에 꾸미기 위해 사용
   - `text-decoration-line`, `text-decoration-color`, `text-decoration-style`, `text-decoration-thickness` 를 순서 상관없이 사용 가능
+- `text-transform` : 한글에는 사용할 수 없고 영어나 일어 등에 사용 가능하다. uppercase, lowercase, capitalize
 
 ```
 .text {
   text-align: center;
   text-indent: 10px;
   text-decoration: wavy line-through red 4px;
+  text-transform: capitalize;
 }
 ```
 
@@ -99,16 +81,24 @@
 
 ## 4. word-break
 
-- `word-break` : 글자가 박스 가로폭을 초과할 때 라인 줄바꿈 설정
-  - normal :
-  - break-all :
-  - keep-all :
+- `word-break` : 글자가 박스 가로폭을 초과할 때 라인 줄바꿈 설정. 영어와 다른 언어간에 동작하는게 다르다.
+  - normal : 한중일 언어의 경우 자동으로 줄바꿈 적용. 영어의 경우 줄바꿈이 되지 않고 뚫고 나간다.
+  - break-all : 영어에서 자동으로 줄바꿈을 적용.
+  - keep-all : 한중일 언어에서 줄바꿈이 되지 않고 뚫고 나간다.
 
 ```
-
+p {
+  word-break: break-all;
+}
 ```
 
 <br><hr>
 
 참고 : https://developer.mozilla.org/ko/docs/Web/CSS/font  
-참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-align  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/word-break
