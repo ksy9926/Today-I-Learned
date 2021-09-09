@@ -36,6 +36,7 @@
 - [2021-09-06의 TIL](Today's%20Memo/2021-09-06.md)
 - [2021-09-07의 TIL](Today's%20Memo/2021-09-07.md)
 - [2021-09-08의 TIL](Today's%20Memo/2021-09-08.md)
+- [2021-09-09의 TIL](Today's%20Memo/2021-09-09.md)
 
 ### 프론트엔드 전반
 
@@ -66,6 +67,7 @@
 - [색상과 배경](CSS/color-and-background.md)
 - [transform](CSS/transform.md)
 - [transition](CSS/transition.md)
+- [animation](CSS/animation.md)
 
 ### JavaScript
 
