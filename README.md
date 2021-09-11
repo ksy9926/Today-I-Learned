@@ -69,6 +69,7 @@
 - [transform](CSS/transform.md)
 - [transition](CSS/transition.md)
 - [animation](CSS/animation.md)
+- [flex](CSS/flex.md)
 
 ### JavaScript
 

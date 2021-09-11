@@ -2,66 +2,125 @@
 
 > [1. flexbox 개요](#1-flexbox-개요)
 >
-> [2. transition-property, transition-duration](#2-transition-property-transition-duration)
+> [2. Container - display](#2-container---display)
 >
-> [3. transition-delay, transition-timing-function](#3-transition-delay-transition-timing-function)
+> [3. Container - flex-direction, flex-wrap, flex-flow](#3-container---flex-direction-flex-wrap-flex-flow)
 >
-> [4. transition](#4-transition)
+> [4. Container - justify-content, align-items, align-content](#4-container---justify-content-align-items-align-content)
+>
+> [5. Item - order](#5-item---order)
+>
+> [6. Item - flex-grow, flex-shrink, flex-basis, flex](#6-item---flex-grow-flex-shrink-flex-basis-flex)
+>
+> [7. Item - align-self](#7-item---align-self)
 
 <br><hr>
 
 ## 1. flexbox 개요
 
--
+- 박스와 아이템들을 행 또는 열로 자유자재로 배치시켜준다.
+- 기존 float 등의 방법에 비해 레이아웃을 구성하기 쉽다.
+- Main axis : 주 축(가로)
+- Cross axis : 교차 축(세로)
+- FlexBox에는 container에 적용되는 속성이 있고 각각의 item에 적용되는 속성이 있다.
+- Container : 아이템들을 감싸고 있는 박스
+  - container에 적용되는 속성
+  - display
+  - flex-direction
+  - flex-wrap
+  - flex-flow
+  - justify-content
+  - align-items
+  - align-content
+- Item : 박스 안의 개별 아이템들
+  - item에 적용되는 속성
+  - order
+  - flex-grow
+  - flex-shrink
+  - flex-basis
+  - flex
+  - align-self
 
 <br><hr>
 
-## 2. transition-property, transition-duration
+## 2. Container - display
 
-- `transition-property` : 어떤 요소에 transition을 적용할 지를 선택한다. 모든 요소를 선택하려면 all을 쓰면 된다.
-- `transition-duration` : 요소가 얼마만큼의 시간을 가지고 변할지를 설정한다. s(초)와 ms(밀리초)의 단위를 사용한다.
+- `<display-outside>` : 바깥에 적용되는 속성으로 inline, block
+- `<display-inside>` : 내부 아이템에 적용되는 속성으로 flow grid, flex 가 있다.
+- flexbox를 적용하기 위해서는 display에 flex를 입력해준다.
 
 ```
-.box{
-  transition-property: margin-right, color;
-  transition-duration: 1.5s;
+.container {
+  display: flex;
 }
 ```
 
 <br><hr>
 
-## 3. transition-delay, transition-timing-function
+## 3. Container - flex-direction, flex-wrap, flex-flow
 
-- `transition-delay` : 요소의 transition에 delay를 준다.
-- `transition-timing-function` : 변하는 효과의 시간함수를 설정해준다. ease-in, ease-out, ease, step-start, step-end, cubic-bezier() 등을 사용할 수 있다.
+- `flex-direction` : 컨테이너 내의 아이템을 배치할 때 사용할 주축 및 방향을 설정. row가 기본값이다.
+  - row, row-reverse, column, column-reverse
+- `flex-wrap` : 컨테이너 내 item 요소들이 한 줄에 배치되게 할지 여러행으로 나누어 표현 할 지 결정. nowrap이 기본값이다.
+  - nowrap, wrap, wrap-reverse
+- `flex-flow` : flex-direction, flex-wrap 속성의 단축 속성
 
 ```
-.box{
-  transition-delay: 1s;
-  transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+.container {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container2 {
+  flex-flow: column wrap;
 }
 ```
 
 <br><hr>
 
-## 4. transition
+## 4. Container - justify-content, align-items, align-content
 
-- 위의 속성들을 한 번에 표시.
-- duration 과 delay는 둘 다 단위가 같기 때문에 순서가 중요하다. 만약 시간을 하나만 쓸 경우 duration으로 적용이 되며 시간을 두 개 쓸 경우 앞에 쓴 것이 duration, 뒤에 쓴 것이 delay가 된다.
-- 보통 property를 가장 앞에 써 준다.
-
-```
-/* property name | duration */
-transition: margin-left 4s;
-
-/* property name | duration | timing function | delay */
-transition: margin-left 4s ease-in-out 1s;
-```
+- `justify-content` : 주축을 기준으로 아이템을 어떻게 정렬할지 결정하는 속성.
+  - start, center, space-between, space-around, space-evenly, flex-start, flex-end, left, right
+- `align-items` : 교차 축을 기준으로 아이템을 어떻게 정렬할지 결정하는 속성.
+  - stretch, start, center, end, flex-start, flex-end
+- `align-content` : 아이템이 여러개의 줄일 경우 전체를 정렬하는 속성.
+  - center, start, end, flex-start, flex-end, splace-between, space-around, space-evenly, stretch
 
 <br><hr>
 
-출처 : https://developer.mozilla.org/ko/docs/Web/CSS/transition  
-출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property  
-출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration  
-출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay  
-출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+## 5. Item - order
+
+- flex 내 아이템의 요소 배치 순서를 지정. 기본 정렬 순서는 오름차순이고 같은 값일 경우 소스 코드의 순서대로 정렬된다.
+- 기본값은 0이며 음수 설정도 가능하다.
+- order 속성을 사용하면 실제 DOM 순서와 화면에 보여지는 콘텐츠의 순서가 서로 연결되지 않으며 이는 스크린 리더 등 보조 기술을 사용하는 사용자의 경험에 부정적인 영향을 줄 수 있다.
+
+<br><hr>
+
+## 6. Item - flex-grow, flex-shrink, flex-basis, flex
+
+- `flex-grow` : flex 컨테이너의 남는 공간을 아이템들에 할당하는 설정. 기본값은 `0`으로 남는 값을 주지 않는 다는 뜻이다. 0 이상의 숫자만 사용할 수 있으며 소수도 가능하다.
+- `flex-shrink` : flex 컨테이너의 부족한 공간을 아이템들에 할당하는 설정(할당받으면 더 작아진다.). 기본값은 `1`으로 기본적으로 부족한 공간을 나누어준다. 0 이상의 숫자만 사용할 수 있으며 소수도 가능하다.
+- `flex-basis` : 아이템의 초기 크기를 설정. 아무 값도 주지 않을 경우(auto) 아이템의 콘텐트 박스 크기로 설정된다. auto 값을 가지지 않은 flex-basis와 width(flex-direction: column인 경우 height) 값을 동시에 적용한 경우 flex-basis가 우선. 모든 아이템이 같은 크기를 가지게 하려면 0을 넣어주면 된다.
+- `flex` : flex-grow, flex-shrink, flex-basis 를 한번에 작성. 한 개 또는 두 개의 단위 없는 숫자 값을 사용할 때, flex-basis의 값은 기본값인 auto가 아니라 0이 된다. (flex: 1, flex-grow: 1 의 결과가 다르다.). 균등하게 너비를 맞춰주는 flex:1 (flex: 1 1 0)을 주로 많이쓴다.
+
+## 7. Item - align-self
+
+- 아이템에 개별로 정렬을 적용할때 사용.
+  - center, start, end, flex-start, flex-end, stretch
+
+<br><hr>
+
+참고 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Flexbox
+https://developer.mozilla.org/ko/docs/Web/CSS/display
+https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction
+https://developer.mozilla.org/ko/docs/Web/CSS/flex-wrap
+https://developer.mozilla.org/ko/docs/Web/CSS/flex-flow
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+https://developer.mozilla.org/ko/docs/Web/CSS/align-content
+https://developer.mozilla.org/ko/docs/Web/CSS/order
+https://developer.mozilla.org/ko/docs/Web/CSS/flex-grow
+https://developer.mozilla.org/ko/docs/Web/CSS/flex-shrink
+https://developer.mozilla.org/ko/docs/Web/CSS/flex
+https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
