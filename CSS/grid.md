@@ -1,0 +1,204 @@
+# flex
+
+> [1. flexbox 개요](#1-flexbox-개요)
+>
+> [2. Container - display](#2-container---display)
+>
+> [3. Container - grid-template-columns, grid-template-rows, grid-template-areas](#3-container---grid-template-columns-grid-template-rows-grid-template-areas)
+>
+> [4. Container - row-gap, column-gap, gap](#4-container---row-gap-column-gap-gap)
+>
+> [5. Container - grid-auto-rows, grid-auto-columns, grid-auto-flow, grid](#5-container---grid-auto-rows-grid-auto-columns-grid-auto-flow-grid)
+>
+> [6. Container - justify-content, align-content, justify-items, align-items](#6-container---justify-content-align-content-justify-items-align-items)
+>
+> [7. Item - grid-row, grid-column, grid-area](#7-item---grid-row-grid-column-grid-area)
+>
+> [8. Item - order, z-index](#8-item---order-z-index)
+>
+> [9. Grid 단위](#9-grid-단위)
+
+<br><hr>
+
+## 1. grid 개요
+
+- 아이템들을 행과 열에 자유자재로 배치시켜준다. flex는 행 또는 열 하나라면 grid는 2차원적으로 행과 열 모두를 설정해 레이아웃을 짜기에 용이하다.
+- grid 역시 container에 적용되는 속성이 있고 각각의 item에 적용되는 속성이 있다.
+- Container : 아이템들을 감싸고 있는 박스
+  - container에 적용되는 속성
+  - display
+  - grid-template-rows, grid-template-columns
+  - grid-template-areas
+  - row-gap, column-gap, gap
+  - grid-auto-rows, grid-auto-columns
+  - grid-auto-flow
+  - grid
+  - justify-content, align-content
+  - justify-items, align-items
+- Item : 박스 안의 개별 아이템들
+  - item에 적용되는 속성
+  - grid-row, grid-column
+  - grid-area
+  - order
+  - z-index
+
+<br><hr>
+
+## 2. Container - display
+
+- `<display-outside>` : 바깥에 적용되는 속성으로 inline, block
+- `<display-inside>` : 내부 아이템에 적용되는 속성으로 flow grid, flex 가 있다.
+- grid를 적용하기 위해서는 display에 grid를 입력해준다.
+
+```
+.container {
+  display: grid;
+}
+```
+
+<br><hr>
+
+## 3. Container - grid-template-columns, grid-template-rows, grid-template-areas
+
+- `grid-template-columns` : 컨테이너의 열 개수와 너비 또는 비율을 설정
+- `grid-template-rows` : 컨테이너의 행 개수와 높이 또는 비율을 설정
+- `grid-template-areas` : grid 공간의 이름을 설정.
+
+```
+grid-template-columns: 100px 1fr 100px;
+grid-template-columns: repeat(3, 200px);
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: 100px 1fr;
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-rows: repeat(3, 1fr);
+
+grid-template-areas:
+            "header header header"
+            "main main side"
+            "footer footer footer";
+
+
+grid-template-areas:
+            "a a ."
+            "a a ."
+            ". b c";
+
+.item {
+  grid-area: main;
+}
+
+```
+
+<br><hr>
+
+## 4. Container - row-gap, column-gap, gap
+
+- `row-gap` : 행 사이의 간격을 설정
+- `column-gap` : 열 사이의 간격을 설정
+- `gap` : 행과 열 사이의 간격을 설정
+
+```
+row-gap: 10px;
+column-gap: 20px;
+gap: 10px 20px;
+```
+
+<br><hr>
+
+## 5. Container - grid-auto-rows, grid-auto-columns, grid-auto-flow, grid
+
+- 아이템이 정해둔 그리드보다 많아서 넘쳐나는 경우 높이와 너비를 설정해준다.
+- `grid-auto-rows` : 아이템이 정해둔 그리드보다 많아서 넘쳐나는 경우 높이를 설정해준다.
+- `grid-auto-columns` : 아이템이 정해둔 그리드보다 많아서 넘쳐나는 경우 너비를 설정해준다.
+- `grid-auto-flow` : 그리드의 아이템이 채워지는 주축을 설정
+  - row, column, row dense, column dense
+  - dense를 붙이면 빈 공간에 들어갈 수 있는 다음 아이템이 자동으로 채워진다.
+- `grid` : 외재적(명시적) 속성(grid-template-rows, grid-template-columns, grid-template-areas), 내재적(암시적) 속성(grid-auto-rows, grid-auto-columns, grid-auto-flow)를 한번에 작성
+  - `/` 로 구분하여 작성(행에 대한 속성 / 열에 대한 속성)
+
+```
+grid-auto-rows: 100px;
+grid-auto-rows: 3fr;
+
+grid-auto-columns: 100px;
+grid-auto-columns: 3fr;
+
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: row dense;
+grid-auto-flow: column dense;
+
+/*
+grid-template-rows: 1fr 2fr;
+grid-template-columns: 100px 200px;
+*/
+grid: 1fr 2fr / 100px 200px;
+```
+
+<br><hr>
+
+## 6. Container - justify-content, align-content, justify-items, align-items
+
+- 기본적으로 flex와 비슷하게 동작. grid에 남는 공간이 있을 때 아이템들을 어떻게 배치할지를 설정.
+- 전체적인 정렬은 justify-content, align-content를 사용하고 개별적인 행과 열 정렬은 justify-items, align-items를 사용한다.
+
+## 7. Item - grid-row, grid-column, grid-area
+
+- `grid-row` : 해당 아이템이 몇 행을 차지할지 설정. `/` 를 기준으로 grid-row-start와 grid-row-end를 정해준다.
+- `grid-column` : 해당 아이템이 몇 열을 차지할지 설정. `/` 를 기준으로 grid-column-start와 grid-column-end를 정해준다.
+- `grid-area` : grid-template-areas에서 설정한 이름을 지정. 또는 grid-row, grid-column을 한 번에 작성하는 것도 가능하다.
+
+```
+/*
+차례대로
+1번 부터 3번까지,
+2번 부터 -1번까지,
+1번 부터 2칸 차지
+*/
+grid-row: 1 / 3;
+grid-row: 2 / -1;
+grid-row: 1 / span 2;
+
+grid-area: a;
+
+/*
+grid-row-start / grid-column-start / grid-row-end / grid-column-end
+*/
+grid-area: 2 / 1 / 2 / 4;
+```
+
+<br><hr>
+
+## 8. Item - order, z-index
+
+- `order` : flex에서와 동일. 아이템의 순서를 지정
+- `z-index` : 일반적인 z-index와 동일. 아이템의 3차원 축 순서를 지정
+
+<br><hr>
+
+## 9. Grid 단위
+
+- `fr` : 일정 비율로 나눌 때 사용
+- `min-content` : 컨텐츠의 내용 중 가장 작은 크기로 줄어들 수 있는 만큼 줄어든다.
+- `max-content` : 컨텐츠의 내용의 최대 크기로 설정한다.
+- `auto-fill` : 그리드에 공간이 남을때 컬럼을 자동으로 채워 늘려준다. (컬럼 개수가 고정값이 아님)
+- `auto-fit` : auto-fill을 해도 아이템이 부족해 남는 공간이 생길때 채워준다.
+- `minmax()` : 최소일때의 크기와 최대일때의 크기를 지정
+
+<br><hr>
+
+참고 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Grids  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/display  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/grid  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/grid-area

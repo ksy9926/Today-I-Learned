@@ -38,6 +38,8 @@
 - [2021-09-08의 TIL](Today's%20Memo/2021-09-08.md)
 - [2021-09-09의 TIL](Today's%20Memo/2021-09-09.md)
 - [2021-09-10의 TIL](Today's%20Memo/2021-09-10.md)
+- [2021-09-11의 TIL](Today's%20Memo/2021-09-11.md)
+- [2021-09-12의 TIL](Today's%20Memo/2021-09-12.md)
 
 ### 프론트엔드 전반
 
@@ -70,6 +72,7 @@
 - [transition](CSS/transition.md)
 - [animation](CSS/animation.md)
 - [flex](CSS/flex.md)
+- [grid](CSS/grid.md)
 
 ### JavaScript
 

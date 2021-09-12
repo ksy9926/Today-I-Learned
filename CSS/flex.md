@@ -111,16 +111,16 @@
 
 <br><hr>
 
-참고 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Flexbox
-https://developer.mozilla.org/ko/docs/Web/CSS/display
-https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction
-https://developer.mozilla.org/ko/docs/Web/CSS/flex-wrap
-https://developer.mozilla.org/ko/docs/Web/CSS/flex-flow
-https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
-https://developer.mozilla.org/ko/docs/Web/CSS/align-content
-https://developer.mozilla.org/ko/docs/Web/CSS/order
-https://developer.mozilla.org/ko/docs/Web/CSS/flex-grow
-https://developer.mozilla.org/ko/docs/Web/CSS/flex-shrink
-https://developer.mozilla.org/ko/docs/Web/CSS/flex
-https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+참고 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Flexbox  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/display  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex-wrap  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex-flow  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/align-items  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/align-content  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/order  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex-grow  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex-shrink  
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/flex  
+참고 : https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
