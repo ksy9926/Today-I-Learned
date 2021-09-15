@@ -42,6 +42,7 @@
 - [2021-09-12의 TIL](Today's%20Memo/2021-09-12.md)
 - [2021-09-13의 TIL](Today's%20Memo/2021-09-13.md)
 - [2021-09-14의 TIL](Today's%20Memo/2021-09-14.md)
+- [2021-09-15의 TIL](Today's%20Memo/2021-09-15.md)
 
 ### 프론트엔드 전반
 
@@ -50,31 +51,31 @@
 
 ### HTML
 
-- [Introduction](HTML/1. Introduction.md)
-- [HTML이란?](HTML/what-is-html.md)
-- [텍스트 요소](HTML/text-element.md)
-- [구조를 나타내는 요소](HTML/structure-element.md)
-- [목록과 표](HTML/list-and-table.md)
-- [임베디드 요소](HTML/imbedded-element.md)
-- [폼 요소](HTML/form-element.md)
-- [메타데이터 요소](HTML/meta-element.md)
-- [전역 속성](HTML/global-attributes.md)
+- [Introduction](HTML/1.%20Introduction.md)
+- [HTML이란?](HTML/2.%20what-is-html.md)
+- [텍스트 요소](HTML/3.%20text-element.md)
+- [구조를 나타내는 요소](HTML/4.%20structure-element.md)
+- [목록과 표](HTML/5.%20list-and-table.md)
+- [임베디드 요소](HTML/6.%20embedded-element.md)
+- [폼 요소](HTML/7.%20form-element.md)
+- [메타데이터 요소](HTML/8.%20meta-element.md)
+- [전역 속성](HTML/9.%20global-attributes.md)
 - [SEO](HTML/SEO.md)
 
 ### CSS
 
-- [Introduction](CSS/introduction.md)
-- [CSS 선택자](CSS/selector.md)
-- [폰트 관련 속성](CSS/font.md)
-- [단위와 값](CSS/unit.md)
-- [박스 모델](CSS/box-model.md)
-- [레이아웃](CSS/layout.md)
-- [색상과 배경](CSS/color-and-background.md)
-- [transform](CSS/transform.md)
-- [transition](CSS/transition.md)
-- [animation](CSS/animation.md)
-- [flex](CSS/flex.md)
-- [grid](CSS/grid.md)
+- [Introduction](CSS/1.%20introduction.md)
+- [CSS 선택자](CSS/2.%20selector.md)
+- [폰트 관련 속성](CSS/3.%20font.md)
+- [단위와 값](CSS/4.%20unit.md)
+- [박스 모델](CSS/5.%20box-model.md)
+- [레이아웃](CSS/6.%20layout.md)
+- [색상과 배경](CSS/7.%20color-and-background.md)
+- [transform](CSS/8.%20transform.md)
+- [transition](CSS/9.%20transition.md)
+- [animation](CSS/10.%20animation.md)
+- [flex](CSS/11.%20flex.md)
+- [grid](CSS/12.%20grid.md)
 
 ### JavaScript
 
