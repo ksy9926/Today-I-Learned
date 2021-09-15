@@ -50,7 +50,7 @@
 
 ### HTML
 
-- [Introduction](HTML/Introduction.md)
+- [Introduction](HTML/1. Introduction.md)
 - [HTML이란?](HTML/what-is-html.md)
 - [텍스트 요소](HTML/text-element.md)
 - [구조를 나타내는 요소](HTML/structure-element.md)
