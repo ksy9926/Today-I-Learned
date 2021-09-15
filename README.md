@@ -48,6 +48,8 @@
 
 - [브라우저 동작](FrontEnd/browser-rendering.md)
 - [DOM](FrontEnd/DOM.md)
+- [CORS](FrontEnd/CORS.md)
+- [SSR](FrontEnd/SSR.md)
 
 ### HTML
 
