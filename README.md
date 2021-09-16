@@ -43,6 +43,7 @@
 - [2021-09-13의 TIL](Today's%20Memo/2021-09-13.md)
 - [2021-09-14의 TIL](Today's%20Memo/2021-09-14.md)
 - [2021-09-15의 TIL](Today's%20Memo/2021-09-15.md)
+- [2021-09-16의 TIL](Today's%20Memo/2021-09-16.md)
 
 ### 프론트엔드 전반
 
@@ -78,6 +79,7 @@
 - [animation](CSS/10.%20animation.md)
 - [flex](CSS/11.%20flex.md)
 - [grid](CSS/12.%20grid.md)
+- [BEM](CSS/BEM.md)
 
 ### JavaScript
 
