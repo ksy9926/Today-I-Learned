@@ -46,6 +46,7 @@
 - [2021-09-16의 TIL](Today's%20Memo/2021-09-16.md)
 - [2021-09-17의 TIL](Today's%20Memo/2021-09-17.md)
 - [2021-09-18의 TIL](Today's%20Memo/2021-09-18.md)
+- [2021-09-24의 TIL](Today's%20Memo/2021-09-24.md)
 
 ### 프론트엔드 전반
 
@@ -56,35 +57,38 @@
 
 ### HTML
 
-- [Introduction](HTML/1.%20Introduction.md)
-- [HTML이란?](HTML/2.%20what-is-html.md)
-- [텍스트 요소](HTML/3.%20text-element.md)
-- [구조를 나타내는 요소](HTML/4.%20structure-element.md)
-- [목록과 표](HTML/5.%20list-and-table.md)
-- [임베디드 요소](HTML/6.%20embedded-element.md)
-- [폼 요소](HTML/7.%20form-element.md)
-- [메타데이터 요소](HTML/8.%20meta-element.md)
-- [전역 속성](HTML/9.%20global-attributes.md)
+- [1. Introduction](HTML/1.%20Introduction.md)
+- [2. HTML이란?](HTML/2.%20what-is-html.md)
+- [3. 텍스트 요소](HTML/3.%20text-element.md)
+- [4. 구조를 나타내는 요소](HTML/4.%20structure-element.md)
+- [5. 목록과 표](HTML/5.%20list-and-table.md)
+- [6. 임베디드 요소](HTML/6.%20embedded-element.md)
+- [7. 폼 요소](HTML/7.%20form-element.md)
+- [8. 메타데이터 요소](HTML/8.%20meta-element.md)
+- [9. 전역 속성](HTML/9.%20global-attributes.md)
 - [SEO](HTML/SEO.md)
 
 ### CSS
 
-- [Introduction](CSS/1.%20introduction.md)
-- [CSS 선택자](CSS/2.%20selector.md)
-- [폰트 관련 속성](CSS/3.%20font.md)
-- [단위와 값](CSS/4.%20unit.md)
-- [박스 모델](CSS/5.%20box-model.md)
-- [레이아웃](CSS/6.%20layout.md)
-- [색상과 배경](CSS/7.%20color-and-background.md)
-- [transform](CSS/8.%20transform.md)
-- [transition](CSS/9.%20transition.md)
-- [animation](CSS/10.%20animation.md)
-- [flex](CSS/11.%20flex.md)
-- [grid](CSS/12.%20grid.md)
+- [1. Introduction](CSS/1.%20introduction.md)
+- [2. CSS 선택자](CSS/2.%20selector.md)
+- [3. 폰트 관련 속성](CSS/3.%20font.md)
+- [4. 단위와 값](CSS/4.%20unit.md)
+- [5. 박스 모델](CSS/5.%20box-model.md)
+- [6. 레이아웃](CSS/6.%20layout.md)
+- [7. 색상과 배경](CSS/7.%20color-and-background.md)
+- [8. transform](CSS/8.%20transform.md)
+- [9. transition](CSS/9.%20transition.md)
+- [10. animation](CSS/10.%20animation.md)
+- [11. flex](CSS/11.%20flex.md)
+- [12. grid](CSS/12.%20grid.md)
 - [BEM](CSS/BEM.md)
 
 ### JavaScript
 
+- [1. Introduction](JavaScript/1.%20introduction.md)
+- [2. 변수와 상수](JavaScript/2.%20변수와%20상수.md)
+- [3. 자료형](JavaScript/3.%20자료형.md)
 - [코딩테스트용 함수](JavaScript/coding-test.md)
 - [JS 100제](JavaScript/JS100.md)
 
