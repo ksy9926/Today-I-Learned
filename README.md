@@ -47,6 +47,7 @@
 - [2021-09-17의 TIL](Today's%20Memo/2021-09-17.md)
 - [2021-09-18의 TIL](Today's%20Memo/2021-09-18.md)
 - [2021-09-24의 TIL](Today's%20Memo/2021-09-24.md)
+- [2021-09-25의 TIL](Today's%20Memo/2021-09-25.md)
 
 ### 프론트엔드 전반
 
@@ -89,6 +90,7 @@
 - [1. Introduction](JavaScript/1.%20introduction.md)
 - [2. 변수와 상수](JavaScript/2.%20변수와%20상수.md)
 - [3. 자료형](JavaScript/3.%20자료형.md)
+- [4. 자료형](JavaScript/4.%20형변환.md)
 - [코딩테스트용 함수](JavaScript/coding-test.md)
 - [JS 100제](JavaScript/JS100.md)
 
