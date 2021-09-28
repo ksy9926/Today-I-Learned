@@ -50,6 +50,7 @@
 - [2021-09-25의 TIL](Today's%20Memo/2021-09-25.md)
 - [2021-09-26의 TIL](Today's%20Memo/2021-09-26.md)
 - [2021-09-27의 TIL](Today's%20Memo/2021-09-27.md)
+- [2021-09-28의 TIL](Today's%20Memo/2021-09-28.md)
 
 ### 프론트엔드 전반
 
@@ -99,6 +100,8 @@
 - [8. 조건문](JavaScript/8.%20조건문.md)
 - [9. 반복문](JavaScript/9.%20반복문.md)
 - [10. 함수](JavaScript/10.%20함수.md)
+- [11. Number](JavaScript/11.%20Number.md)
+- [12. String](JavaScript/12.%20String.md)
 - [코딩테스트용 함수](JavaScript/coding-test.md)
 - [JS 100제](JavaScript/JS100.md)
 
