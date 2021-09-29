@@ -103,15 +103,13 @@
 - [10. 함수](JavaScript/10.%20함수.md)
 - [11. Number](JavaScript/11.%20Number.md)
 - [12. String](JavaScript/12.%20String.md)
-- [13. Array](JavaScript/13.%20Array.md)
+- [13. Array`](JavaScript/13.%20Array.md)
 - [코딩테스트용 함수](JavaScript/coding-test.md)
 - [JS 100제](JavaScript/JS100.md)
 
 ### 자료구조
 
 ### 알고리즘
-
--
 
 ### Tool
 
