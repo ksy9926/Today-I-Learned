@@ -53,6 +53,8 @@
 - [2021-09-28의 TIL](Today's%20Memo/2021-09-28.md)
 - [2021-09-29의 TIL](Today's%20Memo/2021-09-29.md)
 - [2021-09-30의 TIL](Today's%20Memo/2021-09-30.md)
+- [2021-10-01의 TIL](Today's%20Memo/2021-10-01.md)
+- [2021-10-02의 TIL](Today's%20Memo/2021-10-02.md)
 
 ### 프론트엔드 전반
 
@@ -104,7 +106,12 @@
 - [10. 함수](JavaScript/10.%20함수.md)
 - [11. Number](JavaScript/11.%20Number.md)
 - [12. String](JavaScript/12.%20String.md)
-- [13. Array`](JavaScript/13.%20Array.md)
+- [13. Array](JavaScript/13.%20Array.md)
+- [14. 생성자](JavaScript/14.%20생성자.md)
+- [15. Collection](JavaScript/15.%20Collection.md)
+- [16. Map](JavaScript/16.%20Map.md)
+- [17. Set](JavaScript/17.%20Set.md)
+- [18. Math](JavaScript/18.%20Math.md)
 - [코딩테스트용 함수](JavaScript/coding-test.md)
 - [JS 100제](JavaScript/JS100.md)
 
