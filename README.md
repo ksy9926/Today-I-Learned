@@ -58,6 +58,7 @@
 - [2021-10-03의 TIL](Today's%20Memo/2021-10-03.md)
 - [2021-10-04의 TIL](Today's%20Memo/2021-10-04.md)
 - [2021-10-05의 TIL](Today's%20Memo/2021-10-05.md)
+- [2021-10-06의 TIL](Today's%20Memo/2021-10-06.md)
 
 ### 프론트엔드 전반
 
@@ -122,6 +123,10 @@
 ### 자료구조
 
 ### 알고리즘
+
+- [1. introduction](Algorithm/1.%20introduction.md)
+
+### 수학
 
 ### Tool
 
