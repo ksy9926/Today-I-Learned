@@ -59,6 +59,7 @@
 - [2021-10-04의 TIL](Today's%20Memo/2021-10-04.md)
 - [2021-10-05의 TIL](Today's%20Memo/2021-10-05.md)
 - [2021-10-06의 TIL](Today's%20Memo/2021-10-06.md)
+- [2021-10-09의 TIL](Today's%20Memo/2021-10-09.md)
 
 ### 프론트엔드 전반
 
@@ -127,6 +128,8 @@
 - [1. introduction](Algorithm/1.%20introduction.md)
 
 ### 수학
+
+- [경우의 수](수학/경우의수.md)
 
 ### Tool
 
