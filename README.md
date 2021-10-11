@@ -90,6 +90,8 @@
 
 ### 자료구조
 
+- [1. introduction](자료구조/1.%20introduction.md)
+
 ### 알고리즘
 
 - [1. introduction](Algorithm/1.%20introduction.md)
@@ -97,6 +99,7 @@
 ### 수학
 
 - [경우의 수](수학/경우의수.md)
+- [점화식](수학/점화식.md)
 
 ### Tool
 
