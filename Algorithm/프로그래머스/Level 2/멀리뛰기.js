@@ -18,3 +18,5 @@ const solution = (n) => {
 
   return result % 1234567;
 };
+
+// 피보나치와 같은 결과!
